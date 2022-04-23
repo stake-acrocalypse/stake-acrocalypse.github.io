@@ -1,0 +1,44 @@
+* {
+    /* border: 1px solid white; */
+}
+
+.header-logo {
+    position: absolute;
+    width: 23rem;
+    left: 60vw;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.custom-btn {
+    background-color: #cc5721;
+    border: none;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1.1rem;
+    font-weight: bold;
+}
+
+.custom-btn:hover {
+    background-color: #a6461a;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 10px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+@media (max-width: 1050px) {
+    .header-logo {
+        visibility: hidden;
+    }
+}
